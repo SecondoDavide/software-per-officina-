@@ -10,14 +10,12 @@
             color: #ffffff; 
             margin: 0; 
             padding: 20px;
-            
-            /* Impostazione dello sfondo con l'immagine */
             background-image: url('Sfondo più scuro.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-color: #0d1117; /* Sfondo di fallback scuro */
+            background-color: #0d1117; 
         }
 
         header { 
@@ -60,7 +58,6 @@
             color: #f1f5f9;
         }
 
-        /* Contenitore e stile pulsanti */
         .btn-group { 
             display: flex; 
             gap: 12px; 
@@ -109,22 +106,45 @@
     </header>
 
     <div class="container">
+        
+        <!-- Scheda Software: Divisore 1x40 -->
+        <div class="card">
+            <h2>Calcolo Divisore 1x40</h2>
+            <p>Software per la gestione delle divisioni meccaniche, calcolo dei giri manovella e dei fori sui dischi per divisori con rapporto 1:40.</p>
+
+            <video width="100%" autoplay loop muted playsinline style="border-radius: 8px; margin: 15px 0;">
+                <source src="divisore1x40.mp4" type="video/mp4">
+                Il tuo browser non supporta il tag video.
+            </video>
+
+            <div class="btn-group">
+                 <a href="#" class="btn btn-primary" onclick="alert('La versione web online sarà disponibile a breve!'); return false;">Prova Online</a>
+                <a href="divisore1x40.exe" class="btn btn-secondary" download>Scarica Divisore 1x40 (.exe)</a>
+            </div>
+            
+            <p class="smartscreen-note">
+                <em>Nota per Windows: se appare l'avviso di protezione SmartScreen all'apertura, clicca su "Ulteriori informazioni" e poi su "Esegui comunque". Il programma è sicuro al 100%.</em>
+            </p>
+        </div>
+
         <!-- Scheda Software 1: Supporti Elastici -->
         <div class="card">
             <h2>Verifica Supporti Elastici Motore</h2>
             <p>Software per il calcolo e la verifica dei supporti antivibranti ed elastici del motore.</p>
 
-            <!-- Video dimostrativo -->
             <video width="100%" autoplay loop muted playsinline style="border-radius: 8px; margin: 15px 0;">
                 <source src="verifica-supporti-elastici-motore.mp4" type="video/mp4">
                 Il tuo browser non supporta il tag video.
             </video>
 
-            <!-- Gruppo Pulsanti: Prova Online e Download -->
             <div class="btn-group">
                  <a href="#" class="btn btn-primary" onclick="alert('La versione web online sarà disponibile a breve!'); return false;">Prova Online</a>
                 <a href="verifica-supporti-elastici-motore.exe" class="btn btn-secondary" download>Scarica il Software (.exe)</a>
             </div>
+            
+            <p class="smartscreen-note">
+                <em>Nota per Windows: se appare l'avviso di protezione SmartScreen all'apertura, clicca su "Ulteriori informazioni" e poi su "Esegui comunque". Il programma è sicuro al 100%.</em>
+            </p>
         </div>
 
         <!-- Scheda Software 2: Calcolo Elica -->
@@ -132,13 +152,11 @@
             <h2>Calcolo Propulsivo & Eliche Navali</h2>
             <p>Modulo per il dimensionamento idrodinamico delle eliche navali, analisi della spinta e generazione automatica di report tecnici in PDF.</p>
 
-            <!-- Video dimostrativo -->
             <video width="100%" autoplay loop muted playsinline style="border-radius: 8px; margin: 15px 0;">
                 <source src="Presentazione_Calcolo_Elica.mp4" type="video/mp4">
                 Il tuo browser non supporta il tag video.
             </video>
 
-            <!-- Gruppo Pulsanti -->
             <div class="btn-group">
                 <a href="#" class="btn btn-primary" onclick="alert('La versione web online sarà disponibile a breve!'); return false;">Prova Online</a>
                 <a href="https://github.com/SecondoDavide/software-per-officina-/releases/download/v1-0-0/calcolo-elica-v2.exe" download class="btn btn-secondary">Scarica Calcolo Elica v2.0 (EXE)</a>
