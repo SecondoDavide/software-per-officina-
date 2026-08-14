@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Miei Software & Progetti</title>
+    <title>Secondo Davide - I Miei Software & Progetti</title>
     <style>
         body { 
             font-family: Arial, sans-serif; 
@@ -30,25 +30,34 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        header p {
+            margin-bottom: 0;
+            color: #cbd5e1;
+        }
+
         .container { 
             max-width: 800px; 
             margin: 20px auto; 
         }
 
         .card { 
-            background: rgba(255, 255, 255, 0.88); 
-            color: #1e293b;
+            background: rgba(255, 255, 255, 0.35); 
+            color: #ffffff; 
             padding: 24px; 
             margin-bottom: 24px; 
             border-radius: 12px; 
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.25);
         }
 
         .card h2 {
             margin-top: 0;
-            color: #0f172a;
+            color: #ffffff; 
+        }
+
+        .card p {
+            color: #f1f5f9;
         }
 
         /* Contenitore e stile pulsanti */
@@ -72,23 +81,30 @@
         .btn-primary { 
             background: #1e3a8a; 
             color: white; 
-        } /* Pulsante Prova */
+        } 
 
         .btn-secondary { 
             background: #0d9488; 
             color: white; 
-        } /* Pulsante Scarica */
+        } 
 
         .btn:hover { 
             opacity: 0.9;
             transform: translateY(-1px);
+        }
+
+        .smartscreen-note {
+            font-size: 13px; 
+            color: #e2e8f0; 
+            margin-top: 12px;
+            line-height: 1.4;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>I Miei Software</h1>
+        <h1>Secondo Davide</h1>
         <p>Strumenti e utility per il calcolo e la progettazione</p>
     </header>
 
@@ -125,15 +141,12 @@
             <!-- Gruppo Pulsanti -->
             <div class="btn-group">
                 <a href="#" class="btn btn-primary" onclick="alert('La versione web online sarà disponibile a breve!'); return false;">Prova Online</a>
-                <a href="https://github.com/SecondoDavide/software-per-officina-/releases/download/v1-0-0/calcolo-elica-v2.exe" 
-   download 
-   class="bottone-download">
-    Scarica Calcolo Elica v2.0 (EXE)
-</a>
-                <p style="font-size: 14px; color: #666;">
-  <em>Nota per Windows: se appare l'avviso di protezione SmartScreen all'apertura, clicca su "Ulteriori informazioni" e poi su "Esegui comunque". Il programma è sicuro al 100%.</em>
-</p>
+                <a href="https://github.com/SecondoDavide/software-per-officina-/releases/download/v1-0-0/calcolo-elica-v2.exe" download class="btn btn-secondary">Scarica Calcolo Elica v2.0 (EXE)</a>
             </div>
+            
+            <p class="smartscreen-note">
+                <em>Nota per Windows: se appare l'avviso di protezione SmartScreen all'apertura, clicca su "Ulteriori informazioni" e poi su "Esegui comunque". Il programma è sicuro al 100%.</em>
+            </p>
         </div>
     </div>
 
